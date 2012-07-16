@@ -25,14 +25,15 @@ body
     text-align: right
 
 #content
-  +container
+  padding: 0 30px
+  -webkit-column-count: 3
 
 article
-  +column(4)
   margin-bottom: 15px
+  width: 300px
+  float: left
 
 article:nth-child(3n)
-  +last
 
 header
   @include clearfix

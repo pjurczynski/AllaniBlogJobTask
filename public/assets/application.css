@@ -5478,37 +5478,24 @@ body {
 
 /* line 27, ../../app/assets/stylesheets/partials/_global.css.sass */
 #content {
-  width: 950px;
-  margin: 0 auto;
-  overflow: hidden;
-  *zoom: 1;
+  padding: 0 30px;
+  -webkit-column-count: 3;
 }
 
-/* line 30, ../../app/assets/stylesheets/partials/_global.css.sass */
+/* line 31, ../../app/assets/stylesheets/partials/_global.css.sass */
 article {
-  display: inline;
-  float: left;
-  margin-right: 20px;
-  width: 300px;
   margin-bottom: 15px;
-}
-/* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p0@allani/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html article {
-  overflow-x: hidden;
+  width: 300px;
+  float: left;
 }
 
-/* line 34, ../../app/assets/stylesheets/partials/_global.css.sass */
-article:nth-child(3n) {
-  margin-right: 0;
-}
-
-/* line 37, ../../app/assets/stylesheets/partials/_global.css.sass */
+/* line 38, ../../app/assets/stylesheets/partials/_global.css.sass */
 header {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 40, ../../app/assets/stylesheets/partials/_global.css.sass */
+/* line 41, ../../app/assets/stylesheets/partials/_global.css.sass */
 figure {
   margin: 0;
 }
