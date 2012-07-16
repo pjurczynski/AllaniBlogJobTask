@@ -1,0 +1,13 @@
+%header
+  %figure.post-image
+    =link_to image_tag("0#{post}.jpg"), "/posts/1"
+  .post-meta
+    %time 2 dni temu przez
+    =link_to "Autor"
+  %h2.post-title
+    = link_to ["Lorem ipsum dolor", "sit amet, consectetur", "Nullam ullamcorper eros", "magna, posuere"].sample
+  %p= ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper eros a turpis imperdiet ut blandit arcu pellentesque. Nulla iaculis scelerisque viverra. Vestibulum tortor magna, posuere eu sollicitudin quis, facilisis et ipsum. Vivamus lorem felis, blandit vel convallis ac, auctor feugiat libero. Etiam at turpis odio. Suspendisse in nisl ac nulla egestas consectetur. Praesent ut libero ut mi placerat convallis ac vitae augue. Phasellus neque libero, varius vitae condimentum nec, feugiat in libero. Quisque rutrum ante sed mi vestibulum iaculis. Phasellus aliquam erat et mi iaculis eu commodo dui hendrerit. Cras tempor dapibus mauris, nec interdum orci vestibulum a. Nullam dignissim sagittis","feugiat libero. Etiam at turpis odio. Suspendisse in nisl ac nulla egestas consectetur. Praesent ut libero ut mi placerat convallis ac vitae augue. Phasellus neque libero, varius vitae condimentum nec, feugiat in libero. Quisque rutrum ante sed mi vestibulum iaculis. Phasellus aliquam erat et mi iaculis eu commodo dui hendrerit. Cras tempor dapibus mauris, nec interdum orci vestibulum a. Nullam dignissim sagittis"].sample
+  -if @posts
+    %footer.read_more
+      =link_to "czytaj więcej..", '/posts/1'
+

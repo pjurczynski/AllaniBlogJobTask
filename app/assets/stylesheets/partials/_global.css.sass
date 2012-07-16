@@ -1,3 +1,5 @@
+html, body, #wrapper
+  min-height: 100%
 body
   background-color: $grey
 
@@ -23,19 +25,13 @@ body
     +column(9, true)
     margin-top: 26px
     text-align: right
+    input[type^="submit"]
+      @extend .icon-search
+      @extend [class^="icon-"]
+      background-image: image-url('glyphicons-halflings.png')
+      background-color: #EEE
+      border: none
 
 #content
   +container
 
-article
-  +column(4)
-  margin-bottom: 15px
-
-article:nth-child(3n)
-  +last
-
-header
-  @include clearfix
-
-figure
-  margin: 0
