@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>AllaniBlog</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="pl">
+  <head>
+    <title>AllaniBlog</title>
+    <%= stylesheet_link_tag    "application.css.sass", :media => 'all' %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <a href="/" id="logo"></a>
+        <div class="search">
+          <form action="/wyszukaj" id="top_search_form" method="GET">
+              <div class="input-append">
+                <input autocomplete="off" class="text type-ahead easy-autotext" id="search" name="search" type="text" value="szukaj">
+                <span class="add-on">
+                  <input class="submit" type="submit" value="">
+                </span>
+              </div>
+          </form>
+        </div>
+      </div>
 
-<%= yield %>
-
-</body>
+      <div id="content">
+          <%= yield %>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,7 +1,3 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /*
  * Bootstrap v2.0.3
  *
@@ -5427,4 +5423,66 @@ a.label:hover, a.badge:hover {
 /* line 21, ../../../../../.rvm/gems/ruby-1.9.3-p0@allani/gems/compass_twitter_bootstrap-2.0.3/stylesheets/compass_twitter_bootstrap/_utilities.scss */
 .invisible {
   visibility: hidden;
+}
+
+/* line 1, ../../app/assets/stylesheets/partials/_global.css.sass */
+body {
+  background-color: #cccccc;
+}
+
+/* line 4, ../../app/assets/stylesheets/partials/_global.css.sass */
+#wrapper {
+  width: 1010px;
+  margin: 0 auto;
+  border-top: 10px solid black;
+  background-color: white;
+}
+
+/* line 10, ../../app/assets/stylesheets/partials/_global.css.sass */
+#header {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  height: 57px;
+  margin: 0 auto 15px;
+  padding: 15px 30px;
+  border-bottom: 1px solid black;
+}
+/* line 17, ../../app/assets/stylesheets/partials/_global.css.sass */
+#header #logo {
+  display: inline;
+  float: left;
+  margin-right: 20px;
+  width: 220px;
+  background: url(/assets/logo.png) no-repeat;
+  height: 56px;
+}
+/* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p0@allani/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #header #logo {
+  overflow-x: hidden;
+}
+/* line 22, ../../app/assets/stylesheets/partials/_global.css.sass */
+#header .search {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 700px;
+  margin-top: 26px;
+  text-align: right;
+}
+/* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p0@allani/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #header .search {
+  overflow-x: hidden;
+}
+
+/* line 27, ../../app/assets/stylesheets/partials/_global.css.sass */
+header {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 30, ../../app/assets/stylesheets/partials/_global.css.sass */
+figure {
+  margin: 0;
 }

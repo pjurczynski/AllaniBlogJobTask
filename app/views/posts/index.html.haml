@@ -1,17 +1,10 @@
-%h1 Listing posts
-
-%table
-  %tr
-    %th
-    %th
-    %th
-
+%div.columns_3
   - @posts.each do |post|
-    %tr
-      %td= link_to 'Show', post
-      %td= link_to 'Edit', edit_post_path(post)
-      %td= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete
+    %article.post
+      %header
+        %figure.post-image
+          =image_tag 'logo.png'
+        %h1.post-title Title,
+      %p Body
+      %footer time Author
 
-%br
-
-= link_to 'New Post', new_post_path
