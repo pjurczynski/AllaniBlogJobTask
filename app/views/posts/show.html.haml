@@ -1,6 +1,14 @@
-%p#notice= notice
+%div.columns_3
+  %article.post
+    = render :partial => 'post', :locals => { :post => '1' }
+    %section.post-comments
+      %header
+        %h3 Comments
+      %article.post-comment
+        %header
+          %figure= image_tag 'comment_01.jpg'
+          %p.post-comment-author
+            Comment by
+            =link_to 'author'
 
-
-= link_to 'Edit', edit_post_path(@post)
-\|
-= link_to 'Back', posts_path
+        some comment
