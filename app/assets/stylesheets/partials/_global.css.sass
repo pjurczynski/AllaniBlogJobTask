@@ -24,6 +24,16 @@ body
     margin-top: 26px
     text-align: right
 
+#content
+  +container
+
+article
+  +column(4)
+  margin-bottom: 15px
+
+article:nth-child(3n)
+  +last
+
 header
   @include clearfix
 

@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = [1,2,3]
+    @posts = [1,2,3,4,5,6]
 
     respond_to do |format|
       format.html # index.html.erb
