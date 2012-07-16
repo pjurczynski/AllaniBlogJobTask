@@ -1,6 +1,47 @@
 .post
-  .post-image
-  .post-title
+  box-sizing: border-box
+  padding: 20px
+  border: 1px solid $border-color
+  +column(12, true)
+  margin-bottom: 15px
+  position: relative
 
-  footer
+  .read_more
+    +column(3)
+    text-align: right
+    opacity: 0
+    position: absolute
+    bottom: 30px
+    right: $blueprint-grid-margin
+    +transition( opacity, 200ms)
+    a
+      @extend .btn
+      @extend .btn-primary
+
+  &:hover .read_more
+    opacity: 1
+
+  header
+    figure
+      margin: 0
+      +column(3)
+      +clearfix
+
+.post-meta
+  +column(3, true)
+  float: right
+  text-align: right
+  margin-top: 16px
+
+.post-title a 
+  color: black
+
+.post-comments
+  +column(12, true)
+  margin-top: 3em
+
+.post-comment
+  margin: 1.5em 0
+  figure
+    +column(3)
     text-align: right

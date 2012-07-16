@@ -13,7 +13,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-    @post = Post.find(params[:id])
+    @post = 1
 
     respond_to do |format|
       format.html # show.html.erb
