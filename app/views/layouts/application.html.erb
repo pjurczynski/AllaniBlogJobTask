@@ -12,10 +12,7 @@
         <a href="/" id="logo"></a>
         <div class="search">
           <form action="/wyszukaj" id="top_search_form" method="GET">
-              <div class="input-append">
-                <input autocomplete="off" class="text type-ahead easy-autotext" id="search" name="search" type="text" value="szukaj">
-                <span class="add-on">
-                  <input class="submit" type="submit" value="">
+              <div class="input-append"><input autocomplete="off" class="text type-ahead easy-autotext" id="search" name="search" type="text" value="szukaj"><span class="add-on"><input class="submit" type="submit" value="">
                 </span>
               </div>
           </form>
@@ -24,6 +21,9 @@
 
       <div id="content">
           <%= yield %>
+      </div>
+      <div id="footer">
+        &nbsp;
       </div>
     </div>
   </body>

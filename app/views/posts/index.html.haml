@@ -1,13 +1,7 @@
-%div.columns_3
+%div#index
   - @posts.each do |post|
     %article.post
-      %header
-        %figure.post-image
-          =link_to image_tag("0#{post}.jpg"), "/posts/1"
-        %h1.post-title= ["Lorem ipsum dolor", "sit amet, consectetur", "Nullam ullamcorper eros", "magna, posuere eu"].sample
-      %p= ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper eros a turpis imperdiet ut blandit arcu pellentesque. Nulla iaculis scelerisque viverra. Vestibulum tortor magna, posuere eu sollicitudin quis, facilisis et ipsum. Vivamus lorem felis, blandit vel convallis ac, auctor feugiat libero. Etiam at turpis odio. Suspendisse in nisl ac nulla egestas consectetur. Praesent ut libero ut mi placerat convallis ac vitae augue. Phasellus neque libero, varius vitae condimentum nec, feugiat in libero. Quisque rutrum ante sed mi vestibulum iaculis. Phasellus aliquam erat et mi iaculis eu commodo dui hendrerit. Cras tempor dapibus mauris, nec interdum orci vestibulum a. Nullam dignissim sagittis","feugiat libero. Etiam at turpis odio. Suspendisse in nisl ac nulla egestas consectetur. Praesent ut libero ut mi placerat convallis ac vitae augue. Phasellus neque libero, varius vitae condimentum nec, feugiat in libero. Quisque rutrum ante sed mi vestibulum iaculis. Phasellus aliquam erat et mi iaculis eu commodo dui hendrerit. Cras tempor dapibus mauris, nec interdum orci vestibulum a. Nullam dignissim sagittis"].sample
-
-      %footer
-        %time 2 dni temu przez
-        =link_to "Autor"
+      = render :partial => 'post', :locals => { :post => post }
+      %nav.post-read-more
+        = link_to 'więcej', '/posts/1'
 

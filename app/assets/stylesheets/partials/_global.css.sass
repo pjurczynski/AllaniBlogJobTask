@@ -1,3 +1,7 @@
+html, body, #wrapper
+  *height: 100%
+  min-height: 100%
+
 body
   background-color: $grey
 
@@ -23,20 +27,31 @@ body
     +column(9, true)
     margin-top: 26px
     text-align: right
+    input[type^="submit"]
+      @extend .icon-search
+      @extend [class^="icon-"]
+      background-image: image-url('glyphicons-halflings.png')
+      background-color: #EEE
+      border: none
+
 
 #content
   padding: 0 30px
-  -webkit-column-count: 3
 
-article
-  margin-bottom: 15px
-  width: 300px
-  float: left
+#index
+  +columns(300px 3)
 
-article:nth-child(3n)
+#single
+  +container
+  article
+    +column(12, true)
+    header
+      figure
+        +column(3)
+      
+    footer
 
-header
-  @include clearfix
-
-figure
-  margin: 0
+#footer
+  height: 3em
+  margin-top: 1.5em
+  border-top: 1px solid whiteSmoke

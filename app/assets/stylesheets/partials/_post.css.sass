@@ -1,6 +1,40 @@
 .post
-  .post-image
-  .post-title
+  position: relative
+  margin-bottom: 15px
+  +column-break-inside(avoid)
+
+  header
+    @include clearfix
+
+  figure
+    margin: 0
 
   footer
     text-align: right
+
+  .post-read-more
+    position: absolute
+    top: 10px
+    width: 100%
+    text-align: center
+    opacity: 0
+    +transition( opacity, 200ms)
+    a
+      @extend .btn
+      @extend .btn-primary
+
+  &:hover .post-read-more
+    opacity: 1
+
+.post-title a
+  color: #333
+
+#single
+  .post
+    +box-sizing(border-box)
+  footer
+    float: right
+    text-align: right
+    margin-top: 1.5em
+  .post-title
+    +column(6)
