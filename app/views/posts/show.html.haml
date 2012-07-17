@@ -4,10 +4,11 @@
     %section.post-comments
       %header
         %h3 Comments
-      %article.post-comment
-        %header
-          %figure= image_tag 'comment_01.jpg'
-          %p.post-comment-author
-            Comment by
-            =link_to 'author'
-        some comment
+      -3.times do
+        %article.post-comment
+          %header
+            %figure= image_tag 'comment_01.jpg'
+            %p.post-comment-author
+              Comment by
+              =link_to 'author'
+          some comment

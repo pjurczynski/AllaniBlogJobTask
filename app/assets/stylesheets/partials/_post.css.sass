@@ -3,9 +3,6 @@
   margin-bottom: 15px
   +column-break-inside(avoid)
 
-  header
-    @include clearfix
-
   figure
     margin: 0
 
@@ -31,10 +28,19 @@
 
 #single
   .post
-    +box-sizing(border-box)
   footer
     float: right
     text-align: right
     margin-top: 1.5em
   .post-title
-    +column(6)
+
+.post-comments
+  +column(12, true)
+  margin-top: 3em
+
+.post-comment
+  padding: .5em 0
+  figure
+    +column(3)
+    text-align: right
+
