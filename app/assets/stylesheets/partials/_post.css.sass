@@ -1,3 +1,4 @@
+/* global post styles - mainly index */
 .post
   position: relative
   margin-bottom: 15px
@@ -9,30 +10,24 @@
   footer
     text-align: right
 
-  .post-read-more
-    position: absolute
-    top: 10px
-    width: 100%
-    text-align: center
-    opacity: 0
-    +transition( opacity, 200ms)
-    a
-      @extend .btn
-      @extend .btn-primary
-
-  &:hover .post-read-more
-    opacity: 1
-
 .post-title a
   color: #333
 
+.post-read-more
+  position: absolute
+  top: 10px
+  width: 100%
+  text-align: center
+  opacity: 0
+  +transition( opacity, 200ms)
+  a
+    @extend .btn
+    @extend .btn-primary
+
+.post:hover .post-read-more
+  opacity: 1
+
 #single
-  .post
-  footer
-    float: right
-    text-align: right
-    margin-top: 1.5em
-  .post-title
 
 .post-comments
   +column(12, true)
